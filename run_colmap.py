@@ -166,7 +166,7 @@ if __name__ == '__main__':
         # refresh the target directory
         target_dir = os.path.join('./results', f'scan{scene}')
         os.system(f'rm -rf {target_dir}')
-        print(f'>>> start to process scene {scene:03d}.')
+        print(f'>>> start to process scene {scene:03d}, the results will be saved at {target_dir}.')
 
         # create the image directory
         image_info = create_image_dir(target=target_dir, source=source_dir, scene_id=scene, id_list=id_list, all_extrinsics=all_extrinsics)
