@@ -113,7 +113,7 @@ if __name__ == '__main__':
     query_pairs = [(i, j) for i in ref_views for j in src_views]
 
     all_scores = np.zeros((len(ref_views), len(src_views)))
-
+    print(f'>>> start to perform view selection using scene {args.select_scene_id}, the results will be saved at {source_dir}/pairs.txt.')
     for scene in args.select_scene_id:
         print(f">>> start to process scene {scene:03d}.")
         # refresh the target directory
